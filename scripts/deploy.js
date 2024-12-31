@@ -1,5 +1,5 @@
-const {exec} = require('child_process');
-const {promisify} = require('util');
+const {exec} = require('node:child_process');
+const {promisify} = require('node:util');
 const winston = require('winston');
 const dotenv = require('dotenv');
 
