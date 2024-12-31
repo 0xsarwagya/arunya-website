@@ -9,7 +9,10 @@
     "lint:check": "biome check .",
     "lint": "biome check . --write",
     "cz": "cz",
-    "prepare": "husky"
+    "spell:check": "cspell \"{README.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,.github/*.md,**/*.tsx,**/*.ts}\"",
+    "type:check": "tsc --noEmit", 
+    "prepare": "husky",
+    "deploy": "node --no-warnings ./scripts/deploy.js"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.0",
@@ -20,6 +23,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "commitizen": "^4.3.1",
+    "cspell": "^8.17.1",
     "lucide-react": "^0.435.0",
     "next": "^14.2.6",
     "next-mdx-remote": "^5.0.0",
